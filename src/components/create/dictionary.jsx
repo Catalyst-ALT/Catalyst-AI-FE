@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
 
-const Dictionary = ({}) => {
+const Dictionary = () => {
     
     const [word, setWord] = useState("");
     const [definition, setDefinition] = useState("");
@@ -14,7 +14,7 @@ const Dictionary = ({}) => {
             word: word,
         })
         .then((response) => {
-            setDefineId(response.data.defineId); 
+            setDefineId(response.data.id); 
             axios
                 .get(`https://catalyst-x226.onrender.com/api/definition/${defineId}`)
                 .then((response) => {

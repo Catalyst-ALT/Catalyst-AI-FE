@@ -22,15 +22,15 @@ const Create = ( {postId, output} ) => {
   return (
       <div>   
       <div>
-        <p>Output: {output}</p>
+        <p>A.I. Prompt: {output}</p>
         <br></br>
         <br></br>
-        <button onClick={() => setActiveComponent("Stopwatch")}>Stopwatch</button>
-        <button onClick={() => setActiveComponent("Audio")}>Audio Play</button>
-        <button onClick={() => setActiveComponent("Metronome")}>Metronome</button>
-        <button onClick={() => setActiveComponent("PomodoroTimer")}>Pomodoro Timer</button>
-        <button onClick={() => setActiveComponent("Notebook")}>Notebook</button>
-        <button onClick={() => setActiveComponent("Dictionary")}>Dictionary</button>
+        <button className="button-25" onClick={() => setActiveComponent("Stopwatch")}>Stopwatch</button>
+        <button className="button-25" onClick={() => setActiveComponent("Audio")}>Audio Play</button>
+        <button className="button-25" onClick={() => setActiveComponent("Metronome")}>Metronome</button>
+        <button className="button-25" onClick={() => setActiveComponent("PomodoroTimer")}>Pomodoro Timer</button>
+        <button className="button-25" onClick={() => setActiveComponent("Notebook")}>Notebook</button>
+        <button className="button-25" onClick={() => setActiveComponent("Dictionary")}>Dictionary</button>
       </div>
       <div className="create-display">
       {components[activeComponent]}
