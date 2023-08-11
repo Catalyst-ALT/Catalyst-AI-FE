@@ -22,6 +22,7 @@ const Create = ({ postId, output }) => {
     Notebook: <CreativeWritingSave postId={postId}/>,
     Dictionary: <Dictionary />,
     Timer: <Timer />,
+    Audio: <Audio />,
   };
   const editorRef = useRef(null);
 
@@ -69,9 +70,9 @@ const Create = ({ postId, output }) => {
               </button>
               <button
                 className="w-full px-4 py-2 border border-slate-400 text-gray-800  bg-slate-100 font-mono text-center"
-                onClick={() => setActiveComponent("PomodoroTimer")}
+                onClick={() => setActiveComponent("Audio")}
               >
-                Pomodoro
+                Audio
               </button>
               <button
                 className="w-full px-4 py-2 border border-slate-400 text-gray-800  bg-slate-100 font-mono text-center"

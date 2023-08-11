@@ -38,6 +38,9 @@ const NavBar = () => {
         <Link to="/" onClick={handleClickCreate}>
           HOME
         </Link>
+        <Link to="/create" onClick={handleClickCreate}>
+        CREATE
+        </Link>
       </div>
       <Outlet />
     </div>
